@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laurents Store - Aplikasi Premium</title>
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Laurents Store - Aplikasi Premium</title>
+<style>
         :root {
             --primary: #4361ee;
             --secondary: #3a0ca3;
@@ -162,14 +163,7 @@
             font-weight: 700;
         }
         
-        .app-name {
-            font-weight: 600;
-            font-size: 0.9375rem;
-            margin-bottom: 0.25rem;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
+        
         
         .app-price {
             color: var(--danger);
@@ -236,8 +230,34 @@
 .other {
     background-color: transparent;
 }
-</style>
 
+@media (min-width: 1024px) {
+    .apps-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+.app-price {
+    font-size: 0.75rem !important;
+}
+
+.apps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 1rem;
+}
+
+.app-name {
+    font-weight: 600;
+    font-size: 0.9375rem;
+    margin-bottom: 0.25rem;
+    white-space: normal !important;
+    overflow: hidden;
+    text-align: center;
+    line-height: 1.2;
+    min-height: 2.5em;
+}
+</style>
 <style>
 .promo-wrapper {
     margin: 0 1rem 1.5rem;
@@ -283,31 +303,26 @@
     background-color: #ef4444;
 }
 </style>
-
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <div class="logo">Laurents Store</div>
-            <div class="user-menu">☰</div>
-        </div>
-    </header>
-    
-    <div class="search-container">
-        <input type="text" class="search-bar" placeholder="Cari aplikasi...">
-    </div>
-    
-    <div class="main-container">
-
-<div class="promo-wrapper">
-    <div class="carousel" id="carousel">
-        <img src="https://a.top4top.io/p_3465jra5d0.png" alt="Promo 1" class="carousel-slide active">
-        <img src="https://b.top4top.io/p_3465y4ucs1.png" alt="Promo 2" class="carousel-slide">
-        <img src="https://c.top4top.io/p_3465nllnt2.png" alt="Promo 3" class="carousel-slide">
-    </div>
-    <div class="carousel-dots" id="carousel-dots"></div>
+<header>
+<div class="header-content">
+<div class="logo">Laurents Store</div>
+<div class="user-menu">☰</div>
 </div>
-
+</header>
+<div class="search-container">
+<input class="search-bar" placeholder="Cari aplikasi..." type="text"/>
+</div>
+<div class="main-container">
+<div class="promo-wrapper">
+<div class="carousel" id="carousel">
+<img alt="Promo 1" class="carousel-slide active" src="https://a.top4top.io/p_3465jra5d0.png"/>
+<img alt="Promo 2" class="carousel-slide" src="https://b.top4top.io/p_3465y4ucs1.png"/>
+<img alt="Promo 3" class="carousel-slide" src="https://c.top4top.io/p_3465nllnt2.png"/>
+</div>
+<div class="carousel-dots" id="carousel-dots"></div>
+</div>
 <style>
 .promo-scroll {
     display: flex;
@@ -368,284 +383,248 @@
     background-color: #e2e8f0;
 }
 </style>
-    
 <div class="scroll-category">
-    <button onclick="scrollToCategory('streaming')" class="nav-btn">Streaming</button>
-    <button onclick="scrollToCategory('editing')" class="nav-btn">Editing</button>
-    <button onclick="scrollToCategory('productivity')" class="nav-btn">Produktivitas</button>
-    <button onclick="scrollToCategory('music')" class="nav-btn">Musik</button>
-    <button onclick="scrollToCategory('other')" class="nav-btn">Lainnya</button>
+<button class="nav-btn" onclick="scrollToCategory('streaming')">Streaming</button>
+<button class="nav-btn" onclick="scrollToCategory('editing')">Editing</button>
+<button class="nav-btn" onclick="scrollToCategory('productivity')">Produktivitas</button>
+<button class="nav-btn" onclick="scrollToCategory('music')">Musik</button>
+<button class="nav-btn" onclick="scrollToCategory('other')">Lainnya</button>
 </div>
-
 <div class="category-section" id="streaming">
-    <div class="category-header">
-        <h2 class="category-title">Aplikasi Streaming</h2>
-    </div>
-    <div class="apps-grid">
-        <div class="app-card" data-app="Netflix" data-price="6.000-27.000">
-            <div class="app-content">
-                <div class="app-icon streaming"><img src="https://k.top4top.io/p_34654cicx0.jpg" alt="" class="app-logo"></div>
-                <div class="app-name">Netflix</div>
-                <div class="app-price">Rp 6.000-27.000</div>
-            </div>
-            <button class="buy-now-btn">Buy Now</button>
-        </div>
-        <div class="app-card" data-app="YouTube" data-price="3.000-15.000">
-            <div class="app-content">
-                <div class="app-icon streaming"><img src="https://l.top4top.io/p_3465rhtxp0.jpg" alt="" class="app-logo"></div>
-                <div class="app-name">YouTube</div>
-                <div class="app-price">Rp 3.000-15.000</div>
-            </div>
-            <button class="buy-now-btn">Buy Now</button>
-        </div>
-        <div class="app-card" data-app="Disney+" data-price="9.000-30.000">
-            <div class="app-content">
-                <div class="app-icon streaming"><img src="https://b.top4top.io/p_3465dr1063.jpg" alt="" class="app-logo"></div>
-                <div class="app-name">Disney+</div>
-                <div class="app-price">Rp 9.000-30.000</div>
-            </div>
-            <button class="buy-now-btn">Buy Now</button>
-        </div>
-        <div class="app-card" data-app="Viu" data-price="2.000-15.000">
-            <div class="app-content">
-                <div class="app-icon streaming"><img src="https://c.top4top.io/p_346576yhm4.jpg" alt="" class="app-logo"></div>
-                <div class="app-name">Viu</div>
-                <div class="app-price">Rp 2.000-15.000</div>
-            </div>
-            <button class="buy-now-btn">Buy Now</button>
-        </div>
-        <div class="app-card" data-app="WeTV" data-price="8.000-31.000">
-            <div class="app-content">
-                <div class="app-icon streaming"><img src="https://d.top4top.io/p_3465c0oai5.jpeg" alt="" class="app-logo"></div>
-                <div class="app-name">WeTV</div>
-                <div class="app-price">Rp 8.000-31.000</div>
-            </div>
-            <button class="buy-now-btn">Buy Now</button>
-        </div>
-        <div class="app-card" data-app="Prime Video" data-price="6.000-12.000">
-            <div class="app-content">
-                <div class="app-icon streaming"><img src="https://a.top4top.io/p_3465z7zys1.jpg" alt="" class="app-logo"></div>
-                <div class="app-name">Prime Video</div>
-                <div class="app-price">Rp 6.000-12.000</div>
-            </div>
-            <button class="buy-now-btn">Buy Now</button>
-        </div>
-        <div class="app-card" data-app="Crunchyroll" data-price="19.000">
-            <div class="app-content">
-                <div class="app-icon streaming"><img src="https://b.top4top.io/p_3465mj6f12.jpg" alt="" class="app-logo"></div>
-                <div class="app-name">Crunchyroll</div>
-                <div class="app-price">Rp 19.000</div>
-            </div>
-            <button class="buy-now-btn">Buy Now</button>
-        </div>
-        <div class="app-card" data-app="Bstation" data-price="6.000-35.000">
-            <div class="app-content">
-                <div class="app-icon streaming"><img src="https://d.top4top.io/p_34650i9zi3.jpeg" alt="" class="app-logo"></div>
-                <div class="app-name">Bstation</div>
-                <div class="app-price">Rp 6.000-35.000</div>
-            </div>
-            <button class="buy-now-btn">Buy Now</button>
-        </div>
-        <div class="app-card" data-app="Drakor ID" data-price="20.000">
-            <div class="app-content">
-                <div class="app-icon streaming"><img src="https://e.top4top.io/p_3465gxc974.jpeg" alt="" class="app-logo"></div>
-                <div class="app-name">Drakor ID</div>
-                <div class="app-price">Rp 20.000</div>
-            </div>
-            <button class="buy-now-btn">Buy Now</button>
-        </div>
-        <div class="app-card" data-app="Vidio" data-price="10.000-120.000">
-            <div class="app-content">
-                <div class="app-icon streaming"><img src="https://f.top4top.io/p_3465f374z5.png" alt="" class="app-logo"></div>
-                <div class="app-name">Vidio</div>
-                <div class="app-price">Rp 10.000-120.000</div>
-            </div>
-            <button class="buy-now-btn">Buy Now</button>
-        </div>
-        <div class="app-card" data-app="Vision+" data-price="15.000-32.500">
-            <div class="app-content">
-                <div class="app-icon streaming"><img src="https://g.top4top.io/p_3465c5p220.jpeg" alt="" class="app-logo"></div>
-                <div class="app-name">Vision+</div>
-                <div class="app-price">Rp 15.000-32.500</div>
-            </div>
-            <button class="buy-now-btn">Buy Now</button>
-        </div>
-        <div class="app-card" data-app="RCTI+" data-price="25.000-33.000">
-            <div class="app-content">
-                <div class="app-icon streaming"><img src="https://h.top4top.io/p_3465kldsq1.png" alt="" class="app-logo"></div>
-                <div class="app-name">RCTI+</div>
-                <div class="app-price">Rp 25.000-33.000</div>
-            </div>
-            <button class="buy-now-btn">Buy Now</button>
-        </div>
-    </div>
+<div class="category-header">
+<h2 class="category-title">Aplikasi Streaming</h2>
 </div>
-
+<div class="apps-grid">
+<div class="app-card" data-app="Netflix" data-price="6.000-27.000">
+<div class="app-content">
+<div class="app-icon streaming"><img alt="" class="app-logo" src="https://k.top4top.io/p_34654cicx0.jpg"/></div>
+<div class="app-name">Netflix</div>
+<div class="app-price">Rp 6.000-27.000</div>
+</div>
+<button class="buy-now-btn">Buy Now</button>
+</div>
+<div class="app-card" data-app="YouTube" data-price="3.000-15.000">
+<div class="app-content">
+<div class="app-icon streaming"><img alt="" class="app-logo" src="https://l.top4top.io/p_3465rhtxp0.jpg"/></div>
+<div class="app-name">YouTube</div>
+<div class="app-price">Rp 3.000-15.000</div>
+</div>
+<button class="buy-now-btn">Buy Now</button>
+</div>
+<div class="app-card" data-app="Disney+" data-price="9.000-30.000">
+<div class="app-content">
+<div class="app-icon streaming"><img alt="" class="app-logo" src="https://b.top4top.io/p_3465dr1063.jpg"/></div>
+<div class="app-name">Disney+</div>
+<div class="app-price">Rp 9.000-30.000</div>
+</div>
+<button class="buy-now-btn">Buy Now</button>
+</div>
+<div class="app-card" data-app="Viu" data-price="2.000-15.000">
+<div class="app-content">
+<div class="app-icon streaming"><img alt="" class="app-logo" src="https://c.top4top.io/p_346576yhm4.jpg"/></div>
+<div class="app-name">Viu</div>
+<div class="app-price">Rp 2.000-15.000</div>
+</div>
+<button class="buy-now-btn">Buy Now</button>
+</div>
+<div class="app-card" data-app="WeTV" data-price="8.000-31.000">
+<div class="app-content">
+<div class="app-icon streaming"><img alt="" class="app-logo" src="https://d.top4top.io/p_3465c0oai5.jpeg"/></div>
+<div class="app-name">WeTV</div>
+<div class="app-price">Rp 8.000-31.000</div>
+</div>
+<button class="buy-now-btn">Buy Now</button>
+</div>
+<div class="app-card" data-app="Prime Video" data-price="6.000-12.000">
+<div class="app-content">
+<div class="app-icon streaming"><img alt="" class="app-logo" src="https://a.top4top.io/p_3465z7zys1.jpg"/></div>
+<div class="app-name">Prime Video</div>
+<div class="app-price">Rp 6.000-12.000</div>
+</div>
+<button class="buy-now-btn">Buy Now</button>
+</div>
+<div class="app-card" data-app="Crunchyroll" data-price="19.000">
+<div class="app-content">
+<div class="app-icon streaming"><img alt="" class="app-logo" src="https://b.top4top.io/p_3465mj6f12.jpg"/></div>
+<div class="app-name">Crunchyroll</div>
+<div class="app-price">Rp 19.000</div>
+</div>
+<button class="buy-now-btn">Buy Now</button>
+</div>
+<div class="app-card" data-app="Bstation" data-price="6.000-35.000">
+<div class="app-content">
+<div class="app-icon streaming"><img alt="" class="app-logo" src="https://d.top4top.io/p_34650i9zi3.jpeg"/></div>
+<div class="app-name">Bstation</div>
+<div class="app-price">Rp 6.000-35.000</div>
+</div>
+<button class="buy-now-btn">Buy Now</button>
+</div>
+<div class="app-card" data-app="Drakor ID" data-price="20.000">
+<div class="app-content">
+<div class="app-icon streaming"><img alt="" class="app-logo" src="https://e.top4top.io/p_3465gxc974.jpeg"/></div>
+<div class="app-name">Drakor ID</div>
+<div class="app-price">Rp 20.000</div>
+</div>
+<button class="buy-now-btn">Buy Now</button>
+</div>
+<div class="app-card" data-app="Vidio" data-price="10.000-120.000">
+<div class="app-content">
+<div class="app-icon streaming"><img alt="" class="app-logo" src="https://f.top4top.io/p_3465f374z5.png"/></div>
+<div class="app-name">Vidio</div>
+<div class="app-price">Rp 10.000-120.000</div>
+</div>
+<button class="buy-now-btn">Buy Now</button>
+</div>
+<div class="app-card" data-app="Vision+" data-price="15.000-32.500">
+<div class="app-content">
+<div class="app-icon streaming"><img alt="" class="app-logo" src="https://g.top4top.io/p_3465c5p220.jpeg"/></div>
+<div class="app-name">Vision+</div>
+<div class="app-price">Rp 15.000-32.500</div>
+</div>
+<button class="buy-now-btn">Buy Now</button>
+</div>
+<div class="app-card" data-app="RCTI+" data-price="25.000-33.000">
+<div class="app-content">
+<div class="app-icon streaming"><img alt="" class="app-logo" src="https://h.top4top.io/p_3465kldsq1.png"/></div>
+<div class="app-name">RCTI+</div>
+<div class="app-price">Rp 25.000-33.000</div>
+</div>
+<button class="buy-now-btn">Buy Now</button>
+</div>
+<div class="app-card" data-app="Spotify" data-price="19.000"><div class="app-content"><div class="app-icon streaming"><img alt="" class="app-logo" src="https://l.top4top.io/p_34655h0yj9.jpg"/></div><div class="app-name">Spotify</div><div class="app-price">Rp 19.000</div></div><button class="buy-now-btn">Buy Now</button></div></div>
+</div>
 <!-- Aplikasi Editing -->
 <div class="category-section" id="editing">
-    <div class="category-header">
-        <h2 class="category-title">Aplikasi Editing</h2>
-    </div>
-    <div class="apps-grid">
-        <div class="app-card" data-app="CapCut" data-price="7.000-20.000">
-            <div class="app-content">
-                <div class="app-icon editing"><img src="https://l.top4top.io/p_3465gfhgg1.jpg" alt="" class="app-logo"></div>
-                <div class="app-name">CapCut</div>
-                <div class="app-price">Rp 7.000-20.000</div>
-            </div>
-            <button class="buy-now-btn">Buy Now</button>
-        </div>
-        <div class="app-card" data-app="AlightMotion" data-price="1.000-3.000">
-            <div class="app-content">
-                <div class="app-icon editing"><img src="https://a.top4top.io/p_346501sh02.jpg" alt="" class="app-logo"></div>
-                <div class="app-name">AlightMotion</div>
-                <div class="app-price">Rp 1.000-3.000</div>
-            </div>
-            <button class="buy-now-btn">Buy Now</button>
-        </div>
-        <div class="app-card" data-app="PicsArt" data-price="5.000-10.000">
-            <div class="app-content">
-                <div class="app-icon editing"><img src="https://h.top4top.io/p_3465s12t90.jpeg" alt="" class="app-logo"></div>
-                <div class="app-name">PicsArt</div>
-                <div class="app-price">Rp 5.000-10.000</div>
-            </div>
-            <button class="buy-now-btn">Buy Now</button>
-        </div>
-        <div class="app-card" data-app="Remini" data-price="4.000-19.000">
-            <div class="app-content">
-                <div class="app-icon editing"><img src="https://d.top4top.io/p_34659357x1.jpg" alt="" class="app-logo"></div>
-                <div class="app-name">Remini</div>
-                <div class="app-price">Rp 4.000-19.000</div>
-            </div>
-            <button class="buy-now-btn">Buy Now</button>
-        </div>
-        <div class="app-card" data-app="VSCO" data-price="12.000">
-            <div class="app-content">
-                <div class="app-icon editing"><img src="https://e.top4top.io/p_34655s29r2.jpg" alt="" class="app-logo"></div>
-                <div class="app-name">VSCO</div>
-                <div class="app-price">Rp 12.000</div>
-            </div>
-            <button class="buy-now-btn">Buy Now</button>
-        </div>
-        <div class="app-card" data-app="Ibis Paint" data-price="19.000">
-            <div class="app-content">
-                <div class="app-icon editing"><img src="https://l.top4top.io/p_3465tjgyc0.jpeg" alt="" class="app-logo"></div>
-                <div class="app-name">Ibis Paint</div>
-                <div class="app-price">Rp 19.000</div>
-            </div>
-            <button class="buy-now-btn">Buy Now</button>
-        </div>
-    </div>
+<div class="category-header">
+<h2 class="category-title">Aplikasi Editing</h2>
 </div>
-
+<div class="apps-grid">
+<div class="app-card" data-app="CapCut" data-price="7.000-20.000">
+<div class="app-content">
+<div class="app-icon editing"><img alt="" class="app-logo" src="https://l.top4top.io/p_3465gfhgg1.jpg"/></div>
+<div class="app-name">CapCut</div>
+<div class="app-price">Rp 7.000-20.000</div>
+</div>
+<button class="buy-now-btn">Buy Now</button>
+</div>
+<div class="app-card" data-app="AlightMotion" data-price="1.000-3.000">
+<div class="app-content">
+<div class="app-icon editing"><img alt="" class="app-logo" src="https://a.top4top.io/p_346501sh02.jpg"/></div>
+<div class="app-name">AlightMotion</div>
+<div class="app-price">Rp 1.000-3.000</div>
+</div>
+<button class="buy-now-btn">Buy Now</button>
+</div>
+<div class="app-card" data-app="PicsArt" data-price="5.000-10.000">
+<div class="app-content">
+<div class="app-icon editing"><img alt="" class="app-logo" src="https://h.top4top.io/p_3465s12t90.jpeg"/></div>
+<div class="app-name">PicsArt</div>
+<div class="app-price">Rp 5.000-10.000</div>
+</div>
+<button class="buy-now-btn">Buy Now</button>
+</div>
+<div class="app-card" data-app="Remini" data-price="4.000-19.000">
+<div class="app-content">
+<div class="app-icon editing"><img alt="" class="app-logo" src="https://d.top4top.io/p_34659357x1.jpg"/></div>
+<div class="app-name">Remini</div>
+<div class="app-price">Rp 4.000-19.000</div>
+</div>
+<button class="buy-now-btn">Buy Now</button>
+</div>
+<div class="app-card" data-app="VSCO" data-price="12.000">
+<div class="app-content">
+<div class="app-icon editing"><img alt="" class="app-logo" src="https://e.top4top.io/p_34655s29r2.jpg"/></div>
+<div class="app-name">VSCO</div>
+<div class="app-price">Rp 12.000</div>
+</div>
+<button class="buy-now-btn">Buy Now</button>
+</div>
+<div class="app-card" data-app="Ibis Paint" data-price="19.000">
+<div class="app-content">
+<div class="app-icon editing"><img alt="" class="app-logo" src="https://l.top4top.io/p_3465tjgyc0.jpeg"/></div>
+<div class="app-name">Ibis Paint</div>
+<div class="app-price">Rp 19.000</div>
+</div>
+<button class="buy-now-btn">Buy Now</button>
+</div>
+<div class="app-card" data-app="Canva" data-price="2.000-25.000"><div class="app-content"><div class="app-icon editing"><img alt="" class="app-logo" src="https://g.top4top.io/p_3465q5sfg4.jpg"/></div><div class="app-name">Canva</div><div class="app-price">Rp 2.000-25.000</div></div><button class="buy-now-btn">Buy Now</button></div></div>
+</div>
 <!-- Aplikasi Produktivitas -->
 <div class="category-section" id="productivity">
-    <div class="category-header">
-        <h2 class="category-title">Aplikasi Produktivitas</h2>
-    </div>
-    <div class="apps-grid">
-        <div class="app-card" data-app="Canva" data-price="2.000-25.000">
-            <div class="app-content">
-                <div class="app-icon productivity"><img src="https://g.top4top.io/p_3465q5sfg4.jpg" alt="" class="app-logo"></div>
-                <div class="app-name">Canva</div>
-                <div class="app-price">Rp 2.000-25.000</div>
-            </div>
-            <button class="buy-now-btn">Buy Now</button>
-        </div>
-        <div class="app-card" data-app="WPS" data-price="27.000">
-            <div class="app-content">
-                <div class="app-icon productivity"><img src="https://h.top4top.io/p_3465hc2l05.jpg" alt="" class="app-logo"></div>
-                <div class="app-name">WPS</div>
-                <div class="app-price">Rp 27.000</div>
-            </div>
-            <button class="buy-now-btn">Buy Now</button>
-        </div>
-        <div class="app-card" data-app="ChatGPT" data-price="17.000-29.000">
-            <div class="app-content">
-                <div class="app-icon productivity"><img src="https://i.top4top.io/p_3465r6r0u6.jpg" alt="" class="app-logo"></div>
-                <div class="app-name">ChatGPT</div>
-                <div class="app-price">Rp 17.000-29.000</div>
-            </div>
-            <button class="buy-now-btn">Buy Now</button>
-        </div>
-        <div class="app-card" data-app="Zoom" data-price="10.000">
-            <div class="app-content">
-                <div class="app-icon productivity"><img src="https://j.top4top.io/p_3465igk737.jpg" alt="" class="app-logo"></div>
-                <div class="app-name">Zoom</div>
-                <div class="app-price">Rp 10.000</div>
-            </div>
-            <button class="buy-now-btn">Buy Now</button>
-        </div>
-    </div>
+<div class="category-header">
+<h2 class="category-title">Aplikasi Produktivitas</h2>
 </div>
+<div class="apps-grid">
 
+<div class="app-card" data-app="WPS" data-price="27.000">
+<div class="app-content">
+<div class="app-icon productivity"><img alt="" class="app-logo" src="https://h.top4top.io/p_3465hc2l05.jpg"/></div>
+<div class="app-name">WPS</div>
+<div class="app-price">Rp 27.000</div>
+</div>
+<button class="buy-now-btn">Buy Now</button>
+</div>
+<div class="app-card" data-app="ChatGPT" data-price="17.000-29.000">
+<div class="app-content">
+<div class="app-icon productivity"><img alt="" class="app-logo" src="https://i.top4top.io/p_3465r6r0u6.jpg"/></div>
+<div class="app-name">ChatGPT</div>
+<div class="app-price">Rp 17.000-29.000</div>
+</div>
+<button class="buy-now-btn">Buy Now</button>
+</div>
+<div class="app-card" data-app="Zoom" data-price="10.000">
+<div class="app-content">
+<div class="app-icon productivity"><img alt="" class="app-logo" src="https://j.top4top.io/p_3465igk737.jpg"/></div>
+<div class="app-name">Zoom</div>
+<div class="app-price">Rp 10.000</div>
+</div>
+<button class="buy-now-btn">Buy Now</button>
+</div>
+<div class="app-card" data-app="Brainly" data-price="18.000"><div class="app-content"><div class="app-icon productivity"><img alt="" class="app-logo" src="https://i.top4top.io/p_3465syr6u0.jpg"/></div><div class="app-name">Brainly</div><div class="app-price">Rp 18.000</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Al-Qur'an" data-price="19.000"><div class="app-content"><div class="app-icon productivity"><img alt="" class="app-logo" src="https://k.top4top.io/p_3465sx31p2.jpg"/></div><div class="app-name">Al-Qur'an</div><div class="app-price">Rp 19.000</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Duolingo" data-price="Hubungi Kami"><div class="app-content"><div class="app-icon productivity"><img alt="" class="app-logo" src="https://i.ibb.co/yYp0MNH/duolingo.png"/></div><div class="app-name">Duolingo</div><div class="app-price">Hubungi Kami</div></div><button class="buy-now-btn">Buy Now</button></div></div>
+</div>
 <!-- Aplikasi Musik -->
 <div class="category-section" id="music">
-    <div class="category-header">
-        <h2 class="category-title">Aplikasi Musik</h2>
-    </div>
-    <div class="apps-grid">
-        <div class="app-card" data-app="Apple Music" data-price="9.000-13.000">
-            <div class="app-content">
-                <div class="app-icon music"><img src="https://k.top4top.io/p_3465y7opu8.jpg" alt="" class="app-logo"></div>
-                <div class="app-name">Apple Music</div>
-                <div class="app-price">Rp 9.000-13.000</div>
-            </div>
-            <button class="buy-now-btn">Buy Now</button>
-        </div>
-        <div class="app-card" data-app="Spotify" data-price="19.000">
-            <div class="app-content">
-                <div class="app-icon music"><img src="https://l.top4top.io/p_34655h0yj9.jpg" alt="" class="app-logo"></div>
-                <div class="app-name">Spotify</div>
-                <div class="app-price">Rp 19.000</div>
-            </div>
-            <button class="buy-now-btn">Buy Now</button>
-        </div>
-    </div>
+<div class="category-header">
+<h2 class="category-title">Aplikasi Musik</h2>
+</div>
+<div class="apps-grid">
+<div class="app-card" data-app="Apple Music" data-price="9.000-13.000">
+<div class="app-content">
+<div class="app-icon music"><img alt="" class="app-logo" src="https://k.top4top.io/p_3465y7opu8.jpg"/></div>
+<div class="app-name">Apple Music</div>
+<div class="app-price">Rp 9.000-13.000</div>
+</div>
+<button class="buy-now-btn">Buy Now</button>
 </div>
 
+</div>
+</div>
 <!-- Aplikasi Lainnya -->
 <div class="category-section" id="other">
-    <div class="category-header">
-        <h2 class="category-title">Aplikasi Lainnya</h2>
-    </div>
-    <div class="apps-grid">
-        <div class="app-card" data-app="Al-Quran" data-price="19.000">
-            <div class="app-content">
-                <div class="app-icon other"><img src="https://k.top4top.io/p_3465sx31p2.jpg" alt="" class="app-logo"></div>
-                <div class="app-name">Al-Quran</div>
-                <div class="app-price">Rp 19.000</div>
-            </div>
-            <button class="buy-now-btn">Buy Now</button>
-        </div>
-        <div class="app-card" data-app="Brainly" data-price="18.000">
-            <div class="app-content">
-                <div class="app-icon other"><img src="https://i.top4top.io/p_3465syr6u0.jpg" alt="" class="app-logo"></div>
-                <div class="app-name">Brainly</div>
-                <div class="app-price">Rp 18.000</div>
-            </div>
-            <button class="buy-now-btn">Buy Now</button>
-        </div>
-        <div class="app-card" data-app="Bot WA" data-price="5.000-15.000">
-            <div class="app-content">
-                <div class="app-icon other"><img src="https://j.top4top.io/p_3465396yv1.jpg" alt="" class="app-logo"></div>
-                <div class="app-name">Bot WA</div>
-                <div class="app-price">Rp 5.000-15.000</div>
-            </div>
-            <button class="buy-now-btn">Buy Now</button>
-        </div>
-        <div class="app-card" data-app="Aplikasi Lain" data-price="Hubungi Kami">
-            <div class="app-content">
-                <div class="app-icon other">+</div>
-                <div class="app-name">Aplikasi Lain</div>
-                <div class="app-price">Hubungi Kami</div>
-            </div>
-            <button class="buy-now-btn">Buy Now</button>
-        </div>
-    </div>
+<div class="category-header">
+<h2 class="category-title">Aplikasi Lainnya</h2>
 </div>
+<div class="apps-grid">
+<div class="app-card" data-app="Al-Quran" data-price="19.000">
+<div class="app-content">
+<div class="app-icon other"><img alt="" class="app-logo" src="https://k.top4top.io/p_3465sx31p2.jpg"/></div>
+<div class="app-name">Al-Quran</div>
+<div class="app-price">Rp 19.000</div>
+</div>
+<button class="buy-now-btn">Buy Now</button>
 </div>
 
+<div class="app-card" data-app="Aplikasi Lain" data-price="Hubungi Kami">
+<div class="app-content">
+<div class="app-icon other">+</div>
+<div class="app-name">Aplikasi Lain</div>
+<div class="app-price">Hubungi Kami</div>
+</div>
+<button class="buy-now-btn">Buy Now</button>
+</div>
+</div>
+</div>
+<div class="category-section" id="game-hosting"><div class="category-header"><h2 class="category-title">Game Hosting</h2></div><div class="apps-grid"><div class="app-card" data-app="Minecraft Server | Low" data-price="Hubungi Kami"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://e.top4top.io/p_346879fsp0.png"/></div><div class="app-name">Minecraft Server | Low</div><div class="app-price">Hubungi Kami</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Minecraft Server | Medium" data-price="Hubungi Kami"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://e.top4top.io/p_346879fsp0.png"/></div><div class="app-name">Minecraft Server | Medium</div><div class="app-price">Hubungi Kami</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Minecraft Server | High" data-price="Hubungi Kami"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://e.top4top.io/p_346879fsp0.png"/></div><div class="app-name">Minecraft Server | High</div><div class="app-price">Hubungi Kami</div></div><button class="buy-now-btn">Buy Now</button></div></div></div><div class="category-section" id="bot-hosting"><div class="category-header"><h2 class="category-title">Bot Hosting</h2></div><div class="apps-grid"><div class="app-card" data-app="Bot WhatsApp | Low" data-price="2.000-5.000"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://b.top4top.io/p_3468p1gb30.png"/></div><div class="app-name">Bot WhatsApp | Low</div><div class="app-price">Rp 2.000-5.000</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Bot WhatsApp | Medium" data-price="5.000-10.000"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://b.top4top.io/p_3468p1gb30.png"/></div><div class="app-name">Bot WhatsApp | Medium</div><div class="app-price">Rp 5.000-10.000</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Bot WhatsApp | High" data-price="10.000-15.000"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://b.top4top.io/p_3468p1gb30.png"/></div><div class="app-name">Bot WhatsApp | High</div><div class="app-price">Rp 10.000-15.000</div></div><button class="buy-now-btn">Buy Now</button></div></div></div><div class="category-section" id="jadi-bot"><div class="category-header"><h2 class="category-title">Jadi Bot WhatsApp</h2></div><div class="apps-grid"><div class="app-card" data-app="Jadi Bot WA | Push Kontak" data-price="Hubungi Kami"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://l.top4top.io/p_3468iq8gr0.jpeg"/></div><div class="app-name">Jadi Bot WA | Push Kontak</div><div class="app-price">Hubungi Kami</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Jadi Bot WA | JPM" data-price="Hubungi Kami"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://l.top4top.io/p_3468iq8gr0.jpeg"/></div><div class="app-name">Jadi Bot WA | JPM</div><div class="app-price">Hubungi Kami</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Jadi Bot WA | BUG" data-price="Hubungi Kami"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://l.top4top.io/p_3468iq8gr0.jpeg"/></div><div class="app-name">Jadi Bot WA | BUG</div><div class="app-price">Hubungi Kami</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Jadi Bot WA | Security Group" data-price="Hubungi Kami"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://l.top4top.io/p_3468iq8gr0.jpeg"/></div><div class="app-name">Jadi Bot WA | Security Group</div><div class="app-price">Hubungi Kami</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Jadi Bot WA | Store" data-price="Hubungi Kami"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://l.top4top.io/p_3468iq8gr0.jpeg"/></div><div class="app-name">Jadi Bot WA | Store</div><div class="app-price">Hubungi Kami</div></div><button class="buy-now-btn">Buy Now</button></div></div></div><div class="category-section" id="website"><div class="category-header"><h2 class="category-title">Jasa Build Website</h2></div><div class="apps-grid"><div class="app-card" data-app="Website | Portofolio" data-price="20.000-40.000"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://g.top4top.io/p_34688mfbv2.jpeg"/></div><div class="app-name">Website | Portofolio</div><div class="app-price">Rp 20.000-40.000</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Website | Store" data-price="30.000-50.000"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://g.top4top.io/p_34688mfbv2.jpeg"/></div><div class="app-name">Website | Store</div><div class="app-price">Rp 30.000-50.000</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Website | Panel Pterodactyl" data-price="40.000-80.000"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://g.top4top.io/p_34688mfbv2.jpeg"/></div><div class="app-name">Website | Panel Pterodactyl</div><div class="app-price">Rp 40.000-80.000</div></div><button class="buy-now-btn">Buy Now</button></div></div></div></div>
 <script>
 function scrollToCategory(id) {
     const el = document.getElementById(id);
@@ -654,7 +633,6 @@ function scrollToCategory(id) {
     }
 }
 </script>
-
 <script>
     // WhatsApp number - DIUBAH MENJADI 6281390482542
     const whatsappNumber = "6281390482542";
@@ -676,13 +654,13 @@ function scrollToCategory(id) {
             e.stopPropagation();
             const card = this.closest('.app-card');
             const appName = card.dataset.app;
-            const appPrice = card.dataset.price;
+            const appPrice = card.dataset.price.toLowerCase();
 
             let message;
-            if (appName === "Aplikasi Lain") {
-                message = "Halo, saya mencari aplikasi premium yang tidak ada di daftar. Apa saja yang tersedia?";
+            if (appName === "Aplikasi Lain" || appPrice.includes("hubungi")) {
+                message = `Halo kak, aku mau beli *${appName}* 😄`;
             } else {
-                message = `Halo, saya ingin membeli *${appName}* (Rp ${appPrice}). Bagaimana cara pemesanannya?`;
+                message = `Halo kak, apakah stock *${appName}* masih ada?`;
             }
 
             const encodedMessage = encodeURIComponent(message);
@@ -690,7 +668,6 @@ function scrollToCategory(id) {
         });
     });
 </script>
-
 <script>
 let slideIndex = 0;
 const slides = document.querySelectorAll(".carousel-slide");
@@ -718,6 +695,5 @@ function autoSlide() {
 showSlide(slideIndex);
 setInterval(autoSlide, 5000);
 </script>
-
 </body>
 </html>
