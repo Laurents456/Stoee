@@ -257,6 +257,11 @@
     line-height: 1.2;
     min-height: 2.5em;
 }
+
+.apps-grid:has(.app-card:only-child) {
+    justify-content: center;
+    display: flex !important;
+}
 </style>
 <style>
 .promo-wrapper {
@@ -406,7 +411,7 @@
 <div class="app-card" data-app="YouTube" data-price="3.000-15.000">
 <div class="app-content">
 <div class="app-icon streaming"><img alt="" class="app-logo" src="https://l.top4top.io/p_3465rhtxp0.jpg"/></div>
-<div class="app-name">YouTube</div>
+<div class="app-name">Youtube</div>
 <div class="app-price">Rp 3.000-15.000</div>
 </div>
 <button class="buy-now-btn">Buy Now</button>
@@ -430,7 +435,7 @@
 <div class="app-card" data-app="WeTV" data-price="8.000-31.000">
 <div class="app-content">
 <div class="app-icon streaming"><img alt="" class="app-logo" src="https://d.top4top.io/p_3465c0oai5.jpeg"/></div>
-<div class="app-name">WeTV</div>
+<div class="app-name">Wetv</div>
 <div class="app-price">Rp 8.000-31.000</div>
 </div>
 <button class="buy-now-btn">Buy Now</button>
@@ -462,7 +467,7 @@
 <div class="app-card" data-app="Drakor ID" data-price="20.000">
 <div class="app-content">
 <div class="app-icon streaming"><img alt="" class="app-logo" src="https://e.top4top.io/p_3465gxc974.jpeg"/></div>
-<div class="app-name">Drakor ID</div>
+<div class="app-name">Drakor Id</div>
 <div class="app-price">Rp 20.000</div>
 </div>
 <button class="buy-now-btn">Buy Now</button>
@@ -486,12 +491,19 @@
 <div class="app-card" data-app="RCTI+" data-price="25.000-33.000">
 <div class="app-content">
 <div class="app-icon streaming"><img alt="" class="app-logo" src="https://h.top4top.io/p_3465kldsq1.png"/></div>
-<div class="app-name">RCTI+</div>
+<div class="app-name">Rcti+</div>
 <div class="app-price">Rp 25.000-33.000</div>
 </div>
 <button class="buy-now-btn">Buy Now</button>
 </div>
-<div class="app-card" data-app="Spotify" data-price="19.000"><div class="app-content"><div class="app-icon streaming"><img alt="" class="app-logo" src="https://l.top4top.io/p_34655h0yj9.jpg"/></div><div class="app-name">Spotify</div><div class="app-price">Rp 19.000</div></div><button class="buy-now-btn">Buy Now</button></div></div>
+<div class="app-card" data-app="Spotify" data-price="19.000"><div class="app-content"><div class="app-icon streaming"><img alt="" class="app-logo" src="https://l.top4top.io/p_34655h0yj9.jpg"/></div><div class="app-name">Spotify</div><div class="app-price">Rp 19.000</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Apple Music" data-price="9.000-13.000">
+<div class="app-content">
+<div class="app-icon music"><img alt="" class="app-logo" src="https://k.top4top.io/p_3465y7opu8.jpg"/></div>
+<div class="app-name">Apple Music</div>
+<div class="app-price">Rp 9.000-13.000</div>
+</div>
+<button class="buy-now-btn">Buy Now</button>
+</div></div>
 </div>
 <!-- Aplikasi Editing -->
 <div class="category-section" id="editing">
@@ -502,7 +514,7 @@
 <div class="app-card" data-app="CapCut" data-price="7.000-20.000">
 <div class="app-content">
 <div class="app-icon editing"><img alt="" class="app-logo" src="https://l.top4top.io/p_3465gfhgg1.jpg"/></div>
-<div class="app-name">CapCut</div>
+<div class="app-name">Capcut</div>
 <div class="app-price">Rp 7.000-20.000</div>
 </div>
 <button class="buy-now-btn">Buy Now</button>
@@ -510,7 +522,7 @@
 <div class="app-card" data-app="AlightMotion" data-price="1.000-3.000">
 <div class="app-content">
 <div class="app-icon editing"><img alt="" class="app-logo" src="https://a.top4top.io/p_346501sh02.jpg"/></div>
-<div class="app-name">AlightMotion</div>
+<div class="app-name">Alightmotion</div>
 <div class="app-price">Rp 1.000-3.000</div>
 </div>
 <button class="buy-now-btn">Buy Now</button>
@@ -518,7 +530,7 @@
 <div class="app-card" data-app="PicsArt" data-price="5.000-10.000">
 <div class="app-content">
 <div class="app-icon editing"><img alt="" class="app-logo" src="https://h.top4top.io/p_3465s12t90.jpeg"/></div>
-<div class="app-name">PicsArt</div>
+<div class="app-name">Picsart</div>
 <div class="app-price">Rp 5.000-10.000</div>
 </div>
 <button class="buy-now-btn">Buy Now</button>
@@ -534,7 +546,7 @@
 <div class="app-card" data-app="VSCO" data-price="12.000">
 <div class="app-content">
 <div class="app-icon editing"><img alt="" class="app-logo" src="https://e.top4top.io/p_34655s29r2.jpg"/></div>
-<div class="app-name">VSCO</div>
+<div class="app-name">Vsco</div>
 <div class="app-price">Rp 12.000</div>
 </div>
 <button class="buy-now-btn">Buy Now</button>
@@ -555,11 +567,10 @@
 <h2 class="category-title">Aplikasi Produktivitas</h2>
 </div>
 <div class="apps-grid">
-
 <div class="app-card" data-app="WPS" data-price="27.000">
 <div class="app-content">
 <div class="app-icon productivity"><img alt="" class="app-logo" src="https://h.top4top.io/p_3465hc2l05.jpg"/></div>
-<div class="app-name">WPS</div>
+<div class="app-name">Wps</div>
 <div class="app-price">Rp 27.000</div>
 </div>
 <button class="buy-now-btn">Buy Now</button>
@@ -567,7 +578,7 @@
 <div class="app-card" data-app="ChatGPT" data-price="17.000-29.000">
 <div class="app-content">
 <div class="app-icon productivity"><img alt="" class="app-logo" src="https://i.top4top.io/p_3465r6r0u6.jpg"/></div>
-<div class="app-name">ChatGPT</div>
+<div class="app-name">Chatgpt</div>
 <div class="app-price">Rp 17.000-29.000</div>
 </div>
 <button class="buy-now-btn">Buy Now</button>
@@ -580,51 +591,11 @@
 </div>
 <button class="buy-now-btn">Buy Now</button>
 </div>
-<div class="app-card" data-app="Brainly" data-price="18.000"><div class="app-content"><div class="app-icon productivity"><img alt="" class="app-logo" src="https://i.top4top.io/p_3465syr6u0.jpg"/></div><div class="app-name">Brainly</div><div class="app-price">Rp 18.000</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Al-Qur'an" data-price="19.000"><div class="app-content"><div class="app-icon productivity"><img alt="" class="app-logo" src="https://k.top4top.io/p_3465sx31p2.jpg"/></div><div class="app-name">Al-Qur'an</div><div class="app-price">Rp 19.000</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Duolingo" data-price="Hubungi Kami"><div class="app-content"><div class="app-icon productivity"><img alt="" class="app-logo" src="https://i.ibb.co/yYp0MNH/duolingo.png"/></div><div class="app-name">Duolingo</div><div class="app-price">Hubungi Kami</div></div><button class="buy-now-btn">Buy Now</button></div></div>
+<div class="app-card" data-app="Brainly" data-price="18.000"><div class="app-content"><div class="app-icon productivity"><img alt="" class="app-logo" src="https://i.top4top.io/p_3465syr6u0.jpg"/></div><div class="app-name">Brainly</div><div class="app-price">Rp 18.000</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Al-Qur'an" data-price="19.000"><div class="app-content"><div class="app-icon productivity"><img alt="" class="app-logo" src="https://k.top4top.io/p_3465sx31p2.jpg"/></div><div class="app-name">Al-Qur'An</div><div class="app-price">Rp 19.000</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Duolingo" data-price="14.000"><div class="app-content"><div class="app-icon productivity"><img alt="" class="app-logo" src="https://g.top4top.io/p_34689htqr0.png"/></div><div class="app-name">Duolingo</div><div class="app-price">Rp 14.000</div></div><button class="buy-now-btn">Buy Now</button></div></div>
 </div>
 <!-- Aplikasi Musik -->
-<div class="category-section" id="music">
-<div class="category-header">
-<h2 class="category-title">Aplikasi Musik</h2>
-</div>
-<div class="apps-grid">
-<div class="app-card" data-app="Apple Music" data-price="9.000-13.000">
-<div class="app-content">
-<div class="app-icon music"><img alt="" class="app-logo" src="https://k.top4top.io/p_3465y7opu8.jpg"/></div>
-<div class="app-name">Apple Music</div>
-<div class="app-price">Rp 9.000-13.000</div>
-</div>
-<button class="buy-now-btn">Buy Now</button>
-</div>
-
-</div>
-</div>
 <!-- Aplikasi Lainnya -->
-<div class="category-section" id="other">
-<div class="category-header">
-<h2 class="category-title">Aplikasi Lainnya</h2>
-</div>
-<div class="apps-grid">
-<div class="app-card" data-app="Al-Quran" data-price="19.000">
-<div class="app-content">
-<div class="app-icon other"><img alt="" class="app-logo" src="https://k.top4top.io/p_3465sx31p2.jpg"/></div>
-<div class="app-name">Al-Quran</div>
-<div class="app-price">Rp 19.000</div>
-</div>
-<button class="buy-now-btn">Buy Now</button>
-</div>
-
-<div class="app-card" data-app="Aplikasi Lain" data-price="Hubungi Kami">
-<div class="app-content">
-<div class="app-icon other">+</div>
-<div class="app-name">Aplikasi Lain</div>
-<div class="app-price">Hubungi Kami</div>
-</div>
-<button class="buy-now-btn">Buy Now</button>
-</div>
-</div>
-</div>
-<div class="category-section" id="game-hosting"><div class="category-header"><h2 class="category-title">Game Hosting</h2></div><div class="apps-grid"><div class="app-card" data-app="Minecraft Server | Low" data-price="Hubungi Kami"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://e.top4top.io/p_346879fsp0.png"/></div><div class="app-name">Minecraft Server | Low</div><div class="app-price">Hubungi Kami</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Minecraft Server | Medium" data-price="Hubungi Kami"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://e.top4top.io/p_346879fsp0.png"/></div><div class="app-name">Minecraft Server | Medium</div><div class="app-price">Hubungi Kami</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Minecraft Server | High" data-price="Hubungi Kami"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://e.top4top.io/p_346879fsp0.png"/></div><div class="app-name">Minecraft Server | High</div><div class="app-price">Hubungi Kami</div></div><button class="buy-now-btn">Buy Now</button></div></div></div><div class="category-section" id="bot-hosting"><div class="category-header"><h2 class="category-title">Bot Hosting</h2></div><div class="apps-grid"><div class="app-card" data-app="Bot WhatsApp | Low" data-price="2.000-5.000"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://b.top4top.io/p_3468p1gb30.png"/></div><div class="app-name">Bot WhatsApp | Low</div><div class="app-price">Rp 2.000-5.000</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Bot WhatsApp | Medium" data-price="5.000-10.000"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://b.top4top.io/p_3468p1gb30.png"/></div><div class="app-name">Bot WhatsApp | Medium</div><div class="app-price">Rp 5.000-10.000</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Bot WhatsApp | High" data-price="10.000-15.000"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://b.top4top.io/p_3468p1gb30.png"/></div><div class="app-name">Bot WhatsApp | High</div><div class="app-price">Rp 10.000-15.000</div></div><button class="buy-now-btn">Buy Now</button></div></div></div><div class="category-section" id="jadi-bot"><div class="category-header"><h2 class="category-title">Jadi Bot WhatsApp</h2></div><div class="apps-grid"><div class="app-card" data-app="Jadi Bot WA | Push Kontak" data-price="Hubungi Kami"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://l.top4top.io/p_3468iq8gr0.jpeg"/></div><div class="app-name">Jadi Bot WA | Push Kontak</div><div class="app-price">Hubungi Kami</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Jadi Bot WA | JPM" data-price="Hubungi Kami"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://l.top4top.io/p_3468iq8gr0.jpeg"/></div><div class="app-name">Jadi Bot WA | JPM</div><div class="app-price">Hubungi Kami</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Jadi Bot WA | BUG" data-price="Hubungi Kami"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://l.top4top.io/p_3468iq8gr0.jpeg"/></div><div class="app-name">Jadi Bot WA | BUG</div><div class="app-price">Hubungi Kami</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Jadi Bot WA | Security Group" data-price="Hubungi Kami"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://l.top4top.io/p_3468iq8gr0.jpeg"/></div><div class="app-name">Jadi Bot WA | Security Group</div><div class="app-price">Hubungi Kami</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Jadi Bot WA | Store" data-price="Hubungi Kami"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://l.top4top.io/p_3468iq8gr0.jpeg"/></div><div class="app-name">Jadi Bot WA | Store</div><div class="app-price">Hubungi Kami</div></div><button class="buy-now-btn">Buy Now</button></div></div></div><div class="category-section" id="website"><div class="category-header"><h2 class="category-title">Jasa Build Website</h2></div><div class="apps-grid"><div class="app-card" data-app="Website | Portofolio" data-price="20.000-40.000"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://g.top4top.io/p_34688mfbv2.jpeg"/></div><div class="app-name">Website | Portofolio</div><div class="app-price">Rp 20.000-40.000</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Website | Store" data-price="30.000-50.000"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://g.top4top.io/p_34688mfbv2.jpeg"/></div><div class="app-name">Website | Store</div><div class="app-price">Rp 30.000-50.000</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Website | Panel Pterodactyl" data-price="40.000-80.000"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://g.top4top.io/p_34688mfbv2.jpeg"/></div><div class="app-name">Website | Panel Pterodactyl</div><div class="app-price">Rp 40.000-80.000</div></div><button class="buy-now-btn">Buy Now</button></div></div></div></div>
+<div class="category-section" id="game-hosting"><div class="category-header"><h2 class="category-title">Game Hosting</h2></div><div class="apps-grid"><div class="app-card" data-app="Minecraft Server | Low" data-price="Hubungi Kami"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://e.top4top.io/p_346879fsp0.png"/></div><div class="app-name">Minecraft Server | Low</div><div class="app-price">Hubungi Kami</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Minecraft Server | Medium" data-price="Hubungi Kami"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://e.top4top.io/p_346879fsp0.png"/></div><div class="app-name">Minecraft Server | Medium</div><div class="app-price">Hubungi Kami</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Minecraft Server | High" data-price="Hubungi Kami"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://e.top4top.io/p_346879fsp0.png"/></div><div class="app-name">Minecraft Server | High</div><div class="app-price">Hubungi Kami</div></div><button class="buy-now-btn">Buy Now</button></div></div></div><div class="category-section" id="bot-hosting"><div class="category-header"><h2 class="category-title">Bot Hosting</h2></div><div class="apps-grid"><div class="app-card" data-app="Bot WhatsApp | Low" data-price="2.000-5.000"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://b.top4top.io/p_3468p1gb30.png"/></div><div class="app-name">Bot Whatsapp | Low</div><div class="app-price">Rp 2.000-5.000</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Bot WhatsApp | Medium" data-price="5.000-10.000"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://b.top4top.io/p_3468p1gb30.png"/></div><div class="app-name">Bot Whatsapp | Medium</div><div class="app-price">Rp 5.000-10.000</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Bot WhatsApp | High" data-price="10.000-15.000"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://b.top4top.io/p_3468p1gb30.png"/></div><div class="app-name">Bot Whatsapp | High</div><div class="app-price">Rp 10.000-15.000</div></div><button class="buy-now-btn">Buy Now</button></div></div></div><div class="category-section" id="jadi-bot"><div class="category-header"><h2 class="category-title">Jadi Bot WhatsApp</h2></div><div class="apps-grid"><div class="app-card" data-app="Jadi Bot WA | Push Kontak" data-price="Hubungi Kami"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://l.top4top.io/p_3468iq8gr0.jpeg"/></div><div class="app-name">Jadi Bot Wa | Push Kontak</div><div class="app-price">Hubungi Kami</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Jadi Bot WA | JPM" data-price="Hubungi Kami"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://l.top4top.io/p_3468iq8gr0.jpeg"/></div><div class="app-name">Jadi Bot Wa | Jpm</div><div class="app-price">Hubungi Kami</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Jadi Bot WA | BUG" data-price="Hubungi Kami"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://l.top4top.io/p_3468iq8gr0.jpeg"/></div><div class="app-name">Jadi Bot Wa | Bug</div><div class="app-price">Hubungi Kami</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Jadi Bot WA | Security Group" data-price="Hubungi Kami"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://l.top4top.io/p_3468iq8gr0.jpeg"/></div><div class="app-name">Jadi Bot Wa | Security Group</div><div class="app-price">Hubungi Kami</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Jadi Bot WA | Store" data-price="Hubungi Kami"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://l.top4top.io/p_3468iq8gr0.jpeg"/></div><div class="app-name">Jadi Bot Wa | Store</div><div class="app-price">Hubungi Kami</div></div><button class="buy-now-btn">Buy Now</button></div></div></div><div class="category-section" id="website"><div class="category-header"><h2 class="category-title">Jasa Build Website</h2></div><div class="apps-grid"><div class="app-card" data-app="Website | Portofolio" data-price="20.000-40.000"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://g.top4top.io/p_34688mfbv2.jpeg"/></div><div class="app-name">Website | Portofolio</div><div class="app-price">Rp 20.000-40.000</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Website | Store" data-price="30.000-50.000"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://g.top4top.io/p_34688mfbv2.jpeg"/></div><div class="app-name">Website | Store</div><div class="app-price">Rp 30.000-50.000</div></div><button class="buy-now-btn">Buy Now</button></div><div class="app-card" data-app="Website | Panel Pterodactyl" data-price="40.000-80.000"><div class="app-content"><div class="app-icon other"><img alt="" class="app-logo" src="https://g.top4top.io/p_34688mfbv2.jpeg"/></div><div class="app-name">Website | Panel Pterodactyl</div><div class="app-price">Rp 40.000-80.000</div></div><button class="buy-now-btn">Buy Now</button></div></div></div></div>
 <script>
 function scrollToCategory(id) {
     const el = document.getElementById(id);
